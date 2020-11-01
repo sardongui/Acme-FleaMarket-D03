@@ -64,6 +64,8 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-new = Novedades
 master.menu.administrator.list-suggestion = Sugerencias
 master.menu.administrator.create-suggestion = Crear Sugerencias
+master.menu.administrator.list-figment = Productos
+master.menu.administrator.create-figment = Crear Producto
 
 master.menu.administrator.dashboard = Panel
 master.menu.administrator.chart = Gráfico
