@@ -20,12 +20,15 @@ public class AdministratorCustomisationController extends AbstractController<Adm
 	@Autowired
 	private AdministratorCustomisationShowService showService;
 
+	@Autowired
+	private AdministratorCustomisationUpdateService	updateService;
 
 	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 
 }
