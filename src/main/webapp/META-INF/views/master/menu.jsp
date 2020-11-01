@@ -53,7 +53,8 @@
 			<acme:menu-suboption code="master.menu.administrator.list-new" action="/administrator/new/list"/>
 			<acme:menu-suboption code="master.menu.administrator.list-suggestion" action="/administrator/suggestion/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-suggestion" action="/administrator/suggestion/create"/>
-		
+			<acme:menu-suboption code="master.menu.administrator.list-figment" action="/administrator/figment/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-figment" action="/administrator/figment/create"/>
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/show" />
 			<acme:menu-separator/>

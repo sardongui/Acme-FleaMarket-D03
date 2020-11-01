@@ -63,6 +63,8 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-new = News
 master.menu.administrator.list-suggestion = Suggestion
 master.menu.administrator.create-suggestion = Create Suggestion
+master.menu.administrator.list-figment = Figment
+master.menu.administrator.create-figment = Create Figment
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.chart = Chart
 
