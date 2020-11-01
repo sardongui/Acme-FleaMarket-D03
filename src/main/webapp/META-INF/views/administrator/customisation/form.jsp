@@ -10,5 +10,12 @@
 	<acme:form-textbox code="administrator.customisation.form.label.newsCategories" path="newsCategories"/>
 	<acme:form-textbox code="administrator.customisation.form.label.itemsCategories" path="itemsCategories"/>
 
+
+	<acme:form-submit test="${command == 'show' }"
+		code="administrator.customisation.form.button.update" 
+		action="/administrator/customisation/update"/>
+	<acme:form-submit test="${command == 'update' }"
+		code="administrator.customisation.form.button.update" 
+		action="/administrator/customisation/update"/>
 	<acme:form-return code="administrator.customisation.form.button.return"/>
 </acme:form>

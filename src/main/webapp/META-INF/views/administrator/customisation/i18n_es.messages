@@ -3,4 +3,5 @@ administrator.customisation.form.label.threshold = Límite
 administrator.customisation.form.label.newsCategories = Categorías nuevas
 administrator.customisation.form.label.itemsCategories = Categorías de artículas
 
+administrator.customisation.form.button.update = Editar
 administrator.customisation.form.button.return = Volver 
