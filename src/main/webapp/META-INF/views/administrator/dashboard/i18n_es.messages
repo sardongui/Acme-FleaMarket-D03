@@ -1,0 +1,12 @@
+administrator.dashboard.form.label.numberNews = Noticias
+administrator.dashboard.form.label.numberMaterialSheets = Hoja de materiales
+administrator.dashboard.form.label.numberToolSheets = Hojas de herramientas
+administrator.dashboard.form.label.numberSuggestions = Sugerencias
+administrator.dashboard.form.label.numberFigments = Productos
+administrator.dashboard.form.label.minDiscountAdvertisements = Mínimo volumen de descuentos en anuncios
+administrator.dashboard.form.label.maxDiscountAdvertisements = Máximo volumen de descuentos en anuncios
+administrator.dashboard.form.label.averageDiscountAdvertisements = Media del volumen Pequeño de descuentos en anuncios
+administrator.dashboard.form.label.averageAverageDiscountAdvertisements = Media del volumen Mediano de descuentos en anuncios
+administrator.dashboard.form.label.averageLargeDiscountAdvertisements = Media del volumen Grande de descuentos en anuncios
+administrator.dashboard.form.label.stddevDiscountAdvertisements = Desviación estándar del volumen de descuentos en anuncios
+administrator.dashboard.form.button.return = Volver

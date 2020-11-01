@@ -1,0 +1,12 @@
+administrator.dashboard.form.label.numberNews = Number News
+administrator.dashboard.form.label.numberMaterialSheets = Material Sheets
+administrator.dashboard.form.label.numberToolSheets = Tool Sheets
+administrator.dashboard.form.label.numberSuggestions = Suggestions
+administrator.dashboard.form.label.numberFigments = Figments
+administrator.dashboard.form.label.minDiscountAdvertisements = Min Discounts Advertisements
+administrator.dashboard.form.label.maxDiscountAdvertisements = Max Discounts Advertisements
+administrator.dashboard.form.label.averageSmallDiscountAdvertisements = Average Small Discount Advertisements
+administrator.dashboard.form.label.averageAverageDiscountAdvertisements = Average Average Discount Advertisements
+administrator.dashboard.form.label.averageLargeDiscountAdvertisements = Average Large Discount Advertisements
+administrator.dashboard.form.label.stddevDiscountAdvertisements = Standard Desviation Discount Advertisments
+administrator.dashboard.form.button.return = Return
