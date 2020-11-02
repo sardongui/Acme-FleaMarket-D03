@@ -1,5 +1,9 @@
 package acme.features.administrator.advertisement;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,14 +65,22 @@ public class AdministratorAdvertisementUpdateService implements AbstractUpdateSe
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+		
+		boolean isDisplayDateFuture;
 
+		if (!errors.hasErrors("displayPeriod")) {
+			Calendar calendar = new GregorianCalendar();
+			Date currentMoment = calendar.getTime();
+			isDisplayDateFuture = request.getModel().getDate("displayPeriod").after(currentMoment);
+			errors.state(request, isDisplayDateFuture, "displayPeriod", "administrator.advertisement.error.displayPeriod");
+		}
 	}
 
 	@Override
 	public void update(Request<Advertisement> request, Advertisement entity) {
 		assert request != null;
 		assert entity != null;
-
+		
 		this.repository.save(entity);
 		
 	}

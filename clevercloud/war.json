@@ -8,7 +8,7 @@
 		"war": [{
 				"file": "target/acme-fleamarket-1.0.war",
 				"context": "/",
-				"port": 8080
+				"port": 80
 			}]
 	}
 }
