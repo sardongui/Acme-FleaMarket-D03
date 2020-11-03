@@ -63,6 +63,8 @@ master.menu.administrator.shutdown = Parar el sistema
 
 master.menu.administrator.list-new = Novedades
 master.menu.administrator.create-new = Crear novedades
+master.menu.administrator.list-material-sheet = Hojas de inventario
+master.menu.administrator.create-material-sheet = Crear hojas de inventario
 master.menu.administrator.list-suggestion = Sugerencias
 master.menu.administrator.create-suggestion = Crear Sugerencias
 master.menu.administrator.list-figment = Productos

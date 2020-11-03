@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedToolSheetRepository extends AbstractRepository {
 
-	@Query("Select t from ToolSheet t group by t.providerName")
+	@Query("Select t from ToolSheet t")
 	Collection<ToolSheet> findMany();
 
 	@Query("select t from ToolSheet t where t.id =?1")

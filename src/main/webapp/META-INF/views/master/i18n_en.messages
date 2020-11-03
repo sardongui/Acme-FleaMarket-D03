@@ -62,6 +62,8 @@ master.menu.administrator.shutdown = Shut down
 
 master.menu.administrator.list-new = News
 master.menu.administrator.create-new = Create new
+master.menu.administrator.list-material-sheet = Material sheets
+master.menu.administrator.create-material-sheet = Create material sheet
 master.menu.administrator.list-suggestion = Suggestion
 master.menu.administrator.create-suggestion = Create Suggestion
 master.menu.administrator.list-figment = Figment
