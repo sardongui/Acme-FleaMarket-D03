@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedMaterialSheetRepository extends AbstractRepository {
 
-	@Query("Select m from MaterialSheet m group by m.providerName")
+	@Query("Select m from MaterialSheet m")
 	Collection<MaterialSheet> findMany();
 
 	@Query("select m from MaterialSheet m where m.id =?1")
