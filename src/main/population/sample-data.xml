@@ -111,6 +111,7 @@
 			<list>
 			</list>
 		</property>
+		<property name="confirmed" value="true" />
 	</bean>
 	
 	<bean id="new02" class="acme.entities.news.New">
@@ -126,6 +127,7 @@
 				<value>www.related-new2.com</value>
 			</list>
 		</property>
+		<property name="confirmed" value="true" />
 	</bean>
 	
 	<bean id="new03" class="acme.entities.news.New">
@@ -140,6 +142,7 @@
 				<value>www.related-new3.com</value>
 			</list>
 		</property>
+		<property name="confirmed" value="true" />
 	</bean>
 	
 	<!-- Material Sheets -->

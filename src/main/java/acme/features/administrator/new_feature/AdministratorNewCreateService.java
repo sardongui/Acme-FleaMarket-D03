@@ -45,7 +45,7 @@ public class AdministratorNewCreateService implements AbstractCreateService<Admi
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "category", "picture", "title", "moment", "deadline", "body", "relatedNews");
+		request.unbind(entity, model, "category", "picture", "title", "moment", "deadline", "body", "relatedNews", "confirmed");
 
 	}
 
@@ -62,6 +62,11 @@ public class AdministratorNewCreateService implements AbstractCreateService<Admi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		if (!entity.isConfirmed()) {
+			errors.state(request, false, "confirmed", "administrator.new.error.notConfirmed");
+		}
+
 	}
 
 	@Override

@@ -10,6 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.URL;
@@ -41,6 +42,7 @@ public class New extends DomainEntity {
 	@Past
 	private Date				moment;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				deadline;
 
@@ -49,5 +51,7 @@ public class New extends DomainEntity {
 
 	@ElementCollection(fetch = FetchType.EAGER)
 	public Collection<String>	relatedNews;
+
+	public boolean				confirmed;
 
 }
