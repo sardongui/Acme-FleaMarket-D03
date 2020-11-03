@@ -54,6 +54,8 @@
 			<acme:menu-suboption code="master.menu.administrator.create-new" action="/administrator/new/create"/>
 			<acme:menu-suboption code="master.menu.administrator.list-material-sheet" action="/administrator/material-sheet/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-material-sheet" action="/administrator/material-sheet/create"/>
+			<acme:menu-suboption code="master.menu.administrator.list-tool-sheet" action="/administrator/tool-sheet/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-tool-sheet" action="/administrator/tool-sheet/create"/>
 			<acme:menu-suboption code="master.menu.administrator.list-suggestion" action="/administrator/suggestion/list"/>
 			<acme:menu-suboption code="master.menu.administrator.create-suggestion" action="/administrator/suggestion/create"/>
 			<acme:menu-suboption code="master.menu.administrator.list-figment" action="/administrator/figment/list"/>
