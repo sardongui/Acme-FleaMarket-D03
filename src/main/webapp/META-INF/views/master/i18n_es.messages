@@ -67,6 +67,8 @@ master.menu.administrator.list-material-sheet = Hojas de inventario
 master.menu.administrator.create-material-sheet = Crear hojas de inventario
 master.menu.administrator.list-tool-sheet = Hojas de herramientas
 master.menu.administrator.create-tool-sheet = Crear hojas de herramientas
+master.menu.administrator.list-banner = Banners
+master.menu.administrator.create-banner = Crear banner
 master.menu.administrator.list-suggestion = Sugerencias
 master.menu.administrator.create-suggestion = Crear Sugerencias
 master.menu.administrator.list-figment = Productos
@@ -142,8 +144,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
-# master.custom-errors ##############################################################
-
-master.custom-errors.creditCard.cvv = El CVV debe ser de 3 o 4 dígitos
 	

@@ -1,0 +1,23 @@
+administrator.banner.form.label.picture = Imagen
+administrator.banner.form.label.slogan = Eslogan
+administrator.banner.form.label.target = URL
+
+administrator.banner.creditCard.form.legend.creditCard = Tarjeta de crédito (Opcional rellenar)
+administrator.banner.creditCard.form.label.holderName = Nombre del propietario
+administrator.banner.creditCard.form.label.number = Número
+administrator.banner.creditCard.form.label.brand = Marca
+administrator.banner.creditCard.form.label.month = Mes expiración
+administrator.banner.creditCard.form.label.year = Año expiración
+administrator.banner.creditCard.form.label.cvv = CVV
+
+administrator.banner.form.button.update = Actualizar
+administrator.banner.form.button.delete = Borrar
+administrator.banner.form.button.create = Crear
+
+administrator.banner.form.button.return = Volver
+
+administrator.banner.list.label.picture = Imagen
+administrator.banner.list.label.slogan = Eslogan
+administrator.banner.list.label.target = URL
+
+administrator.creditCard.error.cvv = El CVV debe ser de 3 o 4 dígitos
