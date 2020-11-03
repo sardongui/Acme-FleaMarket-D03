@@ -19,10 +19,16 @@ public class AdministratorNewController extends AbstractController<Administrator
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AdministratorNewListService	listService;
+	private AdministratorNewListService		listService;
 
 	@Autowired
-	private AdministratorNewShowService	showService;
+	private AdministratorNewShowService		showService;
+
+	@Autowired
+	private AdministratorNewCreateService	createService;
+
+	@Autowired
+	private AdministratorNewUpdateService	updateService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -31,6 +37,8 @@ public class AdministratorNewController extends AbstractController<Administrator
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 
 }
