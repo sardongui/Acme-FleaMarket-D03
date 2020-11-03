@@ -34,7 +34,7 @@ public class AdministratorNewListService implements AbstractListService<Administ
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "category", "picture", "title", "moment", "deadline", "body", "relatedNews");
+		request.unbind(entity, model, "category", "picture", "title", "moment", "deadline", "body", "relatedNews", "confirmed");
 
 	}
 

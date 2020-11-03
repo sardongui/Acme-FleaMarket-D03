@@ -25,7 +25,9 @@
 	<acme:form-moment code="administrator.new.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.new.form.label.body" path="body"/>
 	<acme:form-url code="administrator.new.form.label.relatedNews" path="relatedNews" placeholder="http://www.acme1.com,http://www.acme2.com..." />
-
+	<jstl:if test="${command == 'create' }">
+		<acme:form-checkbox code="administrator.new.form.label.isConfirmed" path="confirmed" />
+	</jstl:if>
 	<acme:form-submit test="${command == 'create' }"
 		code="administrator.new.form.button.create" 
 		action="/administrator/new/create"/>
