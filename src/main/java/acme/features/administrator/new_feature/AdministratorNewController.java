@@ -27,9 +27,6 @@ public class AdministratorNewController extends AbstractController<Administrator
 	@Autowired
 	private AdministratorNewCreateService	createService;
 
-	@Autowired
-	private AdministratorNewUpdateService	updateService;
-
 
 	// Constructors -----------------------------------------------------------
 
@@ -38,7 +35,6 @@ public class AdministratorNewController extends AbstractController<Administrator
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
-		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 
 }

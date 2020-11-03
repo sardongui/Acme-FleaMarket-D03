@@ -25,22 +25,10 @@
 	<acme:form-moment code="administrator.new.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.new.form.label.body" path="body"/>
 	<acme:form-url code="administrator.new.form.label.relatedNews" path="relatedNews" placeholder="http://www.acme1.com,http://www.acme2.com..." />
-			
-	<acme:form-submit test="${command == 'show' }"
-		code="administrator.new.form.button.update" 
-		action="/administrator/new/update"/>
-	<acme:form-submit test="${command == 'show' }"
-		code="administrator.new.form.button.delete" 
-		action="/administrator/new/delete"/>
+
 	<acme:form-submit test="${command == 'create' }"
 		code="administrator.new.form.button.create" 
 		action="/administrator/new/create"/>
-	<acme:form-submit test="${command == 'update' }"
-		code="administrator.new.form.button.update" 
-		action="/administrator/new/update"/>
-	<acme:form-submit test="${command == 'delete' }"
-		code="administrator.new.form.button.delete" 
-		action="/administrator/new/delete"/>
 		
 	<acme:form-return code="administrator.new.form.button.return"/>
 </acme:form>

@@ -7,8 +7,6 @@ administrator.new.form.label.moment = Creation
 administrator.new.form.label.deadline = Deadline
 administrator.new.form.label.relatedNews = Related
 
-administrator.new.form.button.update = Update
-administrator.new.form.button.delete = Delete
 administrator.new.form.button.create= Create
 
 administrator.new.form.button.return = Return
