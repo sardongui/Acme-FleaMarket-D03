@@ -70,6 +70,8 @@ master.menu.administrator.list-suggestion = Suggestion
 master.menu.administrator.create-suggestion = Create Suggestion
 master.menu.administrator.list-figment = Figment
 master.menu.administrator.create-figment = Create Figment
+master.menu.administrator.list-advertisement = Advertisement
+master.menu.administrator.create-advertisement = Create Advertisement
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.chart = Chart
 

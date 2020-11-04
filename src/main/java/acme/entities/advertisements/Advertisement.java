@@ -62,6 +62,8 @@ public class Advertisement extends DomainEntity{
 
 		return discounts;
 	}
+
+	public Boolean	displayPeriodFuture;
 	
 
 }
