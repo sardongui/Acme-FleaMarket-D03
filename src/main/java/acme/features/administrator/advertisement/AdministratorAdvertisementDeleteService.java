@@ -43,7 +43,7 @@ public class AdministratorAdvertisementDeleteService implements AbstractDeleteSe
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "picture", "displayPeriod","creationMoment", "text", "discounts");
+		request.unbind(entity, model, "title", "picture", "displayPeriod","creationMoment", "text", "discounts", "displayPeriod");
 	}
 
 	@Override
@@ -79,7 +79,10 @@ public class AdministratorAdvertisementDeleteService implements AbstractDeleteSe
 	public void delete(Request<Advertisement> request, Advertisement entity) {
 		assert request != null;
 		assert entity != null;
-
+		
+		Date moment = new Date(System.currentTimeMillis() - 1);
+		entity.setCreationMoment(moment);
+		
 		this.repository.delete(entity);
 		
 		

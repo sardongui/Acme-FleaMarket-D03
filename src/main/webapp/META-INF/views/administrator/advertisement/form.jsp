@@ -23,21 +23,22 @@
 	<acme:form-url code="administrator.advertisement.form.label.picture" path="picture"/>
 	<acme:form-moment code="administrator.advertisement.form.label.displayPeriod" path="displayPeriod"/>
 	<acme:form-textbox code="administrator.advertisement.form.label.text" path="text"/>
-	<acme:form-textbox code="administrator.advertisement.form.label.discounts" path="discounts"/>
-
+	<acme:form-textbox code="administrator.advertisement.form.label.discounts" path="discounts" placeholder="SMALL, AVERAGE, LARGE" />
+	<jstl:if test="${displayPeriodFuture==true}">
 		<acme:form-submit test="${command == 'show' }"
 		code="administrator.advertisement.form.button.update" 
 		action="/administrator/advertisement/update"/>
 		<acme:form-submit test="${command == 'show' }"
 		code="administrator.advertisement.form.button.delete" 
 		action="/administrator/advertisement/delete"/>
+	</jstl:if>
 		<acme:form-submit test="${command == 'update' }"
 		code="administrator.advertisement.form.button.update" 
 		action="/administrator/advertisement/update"/>
 		<acme:form-submit test="${command == 'delete' }"
 		code="administrator.advertisement.form.button.delete" 
 		action="/administrator/advertisement/delete"/>
-
+	
 	<acme:form-submit test="${command == 'create' }"
 		code="administrator.advertisement.form.button.create" 
 		action="/administrator/advertisement/create"/>

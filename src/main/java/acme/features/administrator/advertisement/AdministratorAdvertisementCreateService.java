@@ -45,7 +45,7 @@ public class AdministratorAdvertisementCreateService implements AbstractCreateSe
 		assert entity != null;
 		assert model != null;
 		
-		request.unbind(entity, model, "title", "picture", "displayPeriod","creationMoment", "text", "discounts");
+		request.unbind(entity, model, "title", "picture", "displayPeriod","creationMoment", "text", "discounts", "displayPeriod");
 		
 	}
 
@@ -72,6 +72,8 @@ public class AdministratorAdvertisementCreateService implements AbstractCreateSe
 			errors.state(request, isDisplayDateFuture, "displayPeriod", "administrator.advertisement.error.displayPeriod");
 		}
 		
+		
+		
 	}
 
 	@Override
@@ -82,6 +84,10 @@ public class AdministratorAdvertisementCreateService implements AbstractCreateSe
 		Date moment = new Date(System.currentTimeMillis() - 1);
 		entity.setCreationMoment(moment);
 
+		if(entity.getDisplayPeriod().before(moment)) {
+			entity.setDisplayPeriodFuture(false);
+		}
+		entity.setDisplayPeriodFuture(true);
 		this.repository.save(entity);
 		
 	}

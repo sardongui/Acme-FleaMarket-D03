@@ -40,16 +40,19 @@
 		<property name="text" value="Text Advertisement 1"/>
 		<property name="discounts" value="SMALL"/>
 		<property name="item" value="3"/>
+		<property name="displayPeriodFuture" value="true"/>
 	</bean>
 	
 	<bean id="Advertisement02" class="acme.entities.advertisements.Advertisement">
 		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
 		<property name="title" value="Advertisement 2"/>
 		<property name="creationMoment" value="2020/10/21 18:00"/>
-		<property name="displayPeriod" value="2020/12/20 17:00"/>
+		<property name="displayPeriod" value="2020/10/20 17:00"/>
 		<property name="text" value="Text Advertisement 2"/>
 		<property name="discounts" value="AVERAGE"/>
 		<property name="item" value="5"/>
+		<property name="displayPeriodFuture" value="false"/>
+		
 		</bean>
   
 	<bean id="Advertisement03" class="acme.entities.advertisements.Advertisement">
@@ -60,6 +63,8 @@
 		<property name="text" value="Text Advertisement 3"/>
 		<property name="discounts" value="AVERAGE"/>
 		<property name="item" value="4"/>
+		<property name="displayPeriodFuture" value="false"/>
+		
 	</bean>
   
 	<bean id="Advertisement04" class="acme.entities.advertisements.Advertisement">
@@ -70,6 +75,8 @@
 		<property name="text" value="Text Advertisement 4"/>
 		<property name="discounts" value="LARGE"/>
 		<property name="item" value="7"/>
+		<property name="displayPeriodFuture" value="true"/>
+		
 	</bean>
 
 	<!-- Suggestions -->
