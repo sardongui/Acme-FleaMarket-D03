@@ -13,3 +13,7 @@ administrator.figment.list.label.creationMoment = Creation moment
 administrator.figment.list.label.title = Title
 
 administrator.figment.form.button.return = Return
+
+administrator.figment.error.minMoney = We only accept Euros.
+administrator.figment.error.minMoneyLower.= Min money have to be lower than max money.
+administrator.figment.error.maxMoney = We only accept Euros.
