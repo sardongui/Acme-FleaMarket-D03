@@ -312,7 +312,7 @@ New
 + category: String {NotBlank}
 + title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past, NotNull}
-+ deadline: Date {Temporal(TIMESTAMP), NotNull}
++ deadline: Date {Temporal(TIMESTAMP), Future, NotNull}
 + relatedNews: String [0..*]
 
 
