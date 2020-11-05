@@ -20,15 +20,28 @@
 	<acme:form-textbox code="administrator.banner.form.label.slogan" path="slogan"/>
 	<acme:form-url code="administrator.banner.form.label.target" path="target"/>
 	<br/>
-	<fieldset>
-	<legend><acme:message code="administrator.banner.creditCard.form.legend.creditCard"/></legend>
-	<acme:form-textbox code="administrator.banner.creditCard.form.label.holderName" path="creditCard.holderName"/>
-	<acme:form-textbox code="administrator.banner.creditCard.form.label.number" path="creditCard.number" placeholder="1111 2222 3333 4444" />
-	<acme:form-textbox code="administrator.banner.creditCard.form.label.brand" path="creditCard.brand"/>
-	<acme:form-integer code="administrator.banner.creditCard.form.label.month" path="creditCard.month" placeholder="mm" />
-	<acme:form-integer code="administrator.banner.creditCard.form.label.year" path="creditCard.year" placeholder="yyyy" />
-	<acme:form-integer code="administrator.banner.creditCard.form.label.cvv" path="creditCard.cvv" placeholder="XXXX"/>
-	</fieldset>
+	
+	<jstl:choose> 
+		<jstl:when test="${command == 'show' and not hasCreditCard}" >
+			
+			 <acme:form-submit method="get"
+			code="administrator.banner.form.button.addCreditCard" 
+			action="/administrator/credit-card/create?banner=${banner}"
+			/>
+			
+		</jstl:when>
+		<jstl:otherwise>
+			<fieldset>
+			<legend><acme:message code="administrator.banner.creditCard.form.legend.creditCard"/></legend>
+			<acme:form-textbox readonly="true" code="administrator.banner.creditCard.form.label.number" path="creditCard.number" />
+			</fieldset>
+			<acme:form-submit test="${command == 'show' }"
+			code="administrator.banner.form.button.showCreditCard" 
+			action="/administrator/credit-card/show"/>
+		</jstl:otherwise>
+	</jstl:choose>
+	
+	<input id="banner" name="banner" value="${banner}" type="hidden" />
 	
 	<acme:form-submit test="${command == 'show' }"
 		code="administrator.banner.form.button.update" 
@@ -36,6 +49,7 @@
 	<acme:form-submit test="${command == 'show' }"
 		code="administrator.banner.form.button.delete" 
 		action="/administrator/banner/delete"/>
+		
 	<acme:form-submit test="${command == 'create' }"
 		code="administrator.banner.form.button.create" 
 		action="/administrator/banner/create"/>

@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.banners.Banner;
-import acme.entities.creditCards.CreditCard;
 import acme.features.administrator.creditCard.AdministratorCreditCardRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -38,18 +37,15 @@ public class AdministratorBannerCreateService implements AbstractCreateService<A
 		assert errors != null;
 
 		request.bind(entity, errors);
-
 	}
 
 	@Override
 	public void unbind(final Request<Banner> request, final Banner entity, final Model model) {
-
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "picture", "slogan", "target", "creditCard.holderName", "creditCard.number", "creditCard.brand", "creditCard.month", "creditCard.year", "creditCard.cvv");
-
+		request.unbind(entity, model, "picture", "slogan", "target");
 	}
 
 	@Override
@@ -63,7 +59,6 @@ public class AdministratorBannerCreateService implements AbstractCreateService<A
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
 	}
 
 	@Override
@@ -71,11 +66,7 @@ public class AdministratorBannerCreateService implements AbstractCreateService<A
 		assert request != null;
 		assert entity != null;
 
-		CreditCard creditCard = entity.getCreditCard();
-		this.creditCardRepository.save(creditCard);
-
 		this.repository.save(entity);
-
 	}
 
 }

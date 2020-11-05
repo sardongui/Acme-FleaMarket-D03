@@ -29,8 +29,15 @@ public class AdministratorBannerShowService implements AbstractShowService<Admin
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "picture", "slogan", "target", "creditCard.holderName", "creditCard.number", "creditCard.brand", "creditCard.month", "creditCard.year", "creditCard.cvv");
+		model.setAttribute("hasCreditCard", !(entity.getCreditCard() == null));
+		int id = entity.getId();
 
+		model.setAttribute("banner", id);
+		if (entity.getCreditCard() != null) {
+			model.setAttribute("creditCard", entity.getCreditCard().getId());
+		}
+
+		request.unbind(entity, model, "picture", "slogan", "target", "creditCard.number");
 	}
 
 	@Override
