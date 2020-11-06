@@ -31,6 +31,12 @@
 		<acme:form-submit test="${command == 'show' }"
 			code="administrator.creditCard.form.button.update" 
 			action="/administrator/credit-card/update"/>
+			
+			<acme:form-submit test="${command == 'show' }" method="get"
+			code="administrator.creditCard.form.button.delete" 
+			action="/administrator/credit-card/delete?banner=${banner}"
+			/>
+			
 		<acme:form-submit test="${command == 'update' }"
 			code="administrator.creditCard.form.button.update" 
 			action="/administrator/credit-card/update"/>

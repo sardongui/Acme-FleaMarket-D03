@@ -36,7 +36,7 @@
 			<acme:form-textbox readonly="true" code="administrator.banner.creditCard.form.label.number" path="creditCard.number" />
 			</fieldset>
 			<acme:form-submit test="${command == 'show' and hasCreditCard}" method="get" code="administrator.banner.form.button.showCreditCard" 
-			action="/administrator/credit-card/show?id=${creditCard}"/>
+			action="/administrator/credit-card/show?id=${creditCard}&banner=${banner}"/>
 		</jstl:otherwise>
 		
 	</jstl:choose>

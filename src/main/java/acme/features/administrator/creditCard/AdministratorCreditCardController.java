@@ -27,6 +27,9 @@ public class AdministratorCreditCardController extends AbstractController<Admini
 	@Autowired
 	private AdministratorCreditCardShowService		showService;
 
+	@Autowired
+	private AdministratorCreditCardDeleteService	deleteService;
+
 
 	// Constructors -----------------------------------------------------------
 
@@ -35,6 +38,7 @@ public class AdministratorCreditCardController extends AbstractController<Admini
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
-		
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
+
 	}
 }

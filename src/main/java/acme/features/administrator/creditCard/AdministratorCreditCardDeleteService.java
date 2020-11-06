@@ -5,18 +5,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.creditCards.CreditCard;
+import acme.features.administrator.banner.AdministratorBannerRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
-import acme.framework.services.AbstractUpdateService;
+import acme.framework.services.AbstractDeleteService;
 
 @Service
-public class AdministratorCreditCardUpdateService implements AbstractUpdateService<Administrator, CreditCard> {
+public class AdministratorCreditCardDeleteService implements AbstractDeleteService<Administrator, CreditCard> {
 
 	// Internal state ------------------------------------------------------------------
 	@Autowired
-	AdministratorCreditCardRepository repository;
+	AdministratorCreditCardRepository	repository;
+
+	@Autowired
+	AdministratorBannerRepository		bannerRepository;
 
 
 	@Override
@@ -32,7 +36,7 @@ public class AdministratorCreditCardUpdateService implements AbstractUpdateServi
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors);
+		request.bind(entity, errors, "banner");
 	}
 
 	@Override
@@ -63,15 +67,18 @@ public class AdministratorCreditCardUpdateService implements AbstractUpdateServi
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-
 	}
 
 	@Override
-	public void update(final Request<CreditCard> request, final CreditCard entity) {
+	public void delete(final Request<CreditCard> request, final CreditCard entity) {
 		assert request != null;
 		assert entity != null;
 
-		this.repository.save(entity);
+		//Integer id = request.getModel().getInteger("banner");
+		//Banner banner = this.bannerRepository.findOneById(id);
+		//banner.setCreditCard(null);
+
+		this.repository.delete(entity);
 
 	}
 

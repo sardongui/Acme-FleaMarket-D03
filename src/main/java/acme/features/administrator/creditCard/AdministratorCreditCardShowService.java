@@ -28,8 +28,10 @@ public class AdministratorCreditCardShowService implements AbstractShowService<A
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		
+
 		request.unbind(entity, model, "holderName", "number", "brand", "month", "year", "cvv");
+		Integer banner = request.getModel().getInteger("banner");
+		model.setAttribute("banner", banner);
 
 	}
 
@@ -41,7 +43,7 @@ public class AdministratorCreditCardShowService implements AbstractShowService<A
 		int id;
 
 		id = request.getModel().getInteger("id");
-	
+
 		result = this.repository.findOneByBannerId(id);
 		return result;
 	}
