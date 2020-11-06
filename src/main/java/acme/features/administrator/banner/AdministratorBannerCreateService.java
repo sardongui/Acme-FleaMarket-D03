@@ -65,7 +65,7 @@ public class AdministratorBannerCreateService implements AbstractCreateService<A
 	public void create(final Request<Banner> request, final Banner entity) {
 		assert request != null;
 		assert entity != null;
-
+		
 		this.repository.save(entity);
 	}
 

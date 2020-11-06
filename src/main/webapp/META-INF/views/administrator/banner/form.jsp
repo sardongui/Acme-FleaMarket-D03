@@ -35,14 +35,14 @@
 			<legend><acme:message code="administrator.banner.creditCard.form.legend.creditCard"/></legend>
 			<acme:form-textbox readonly="true" code="administrator.banner.creditCard.form.label.number" path="creditCard.number" />
 			</fieldset>
-			<acme:form-submit test="${command == 'show' }"
-			code="administrator.banner.form.button.showCreditCard" 
-			action="/administrator/credit-card/show"/>
+			<acme:form-submit test="${command == 'show' and hasCreditCard}" method="get" code="administrator.banner.form.button.showCreditCard" 
+			action="/administrator/credit-card/show?id=${creditCard}"/>
 		</jstl:otherwise>
+		
 	</jstl:choose>
 	
 	<input id="banner" name="banner" value="${banner}" type="hidden" />
-	
+
 	<acme:form-submit test="${command == 'show' }"
 		code="administrator.banner.form.button.update" 
 		action="/administrator/banner/update"/>
@@ -50,10 +50,10 @@
 		code="administrator.banner.form.button.delete" 
 		action="/administrator/banner/delete"/>
 		
-	<acme:form-submit test="${command == 'create' }"
+	<acme:form-submit test="${command == 'create' }" method="post"
 		code="administrator.banner.form.button.create" 
 		action="/administrator/banner/create"/>
-	<acme:form-submit test="${command == 'update' }"
+	<acme:form-submit test="${command == 'update' }" method="post"
 		code="administrator.banner.form.button.update" 
 		action="/administrator/banner/update"/>
 	<acme:form-submit test="${command == 'delete' }"

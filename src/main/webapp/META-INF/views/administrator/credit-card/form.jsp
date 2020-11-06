@@ -17,7 +17,7 @@
 
 <acme:form>
 	<acme:form-textbox code="administrator.creditCard.form.label.holderName" path="holderName"/>
-	<acme:form-textbox code="administrator.creditCard.form.label.number" path="number" placeholder="1111222233334444" />
+	<acme:form-textbox code="administrator.creditCard.form.label.number" path="number" />
 	<acme:form-textbox code="administrator.creditCard.form.label.brand" path="brand"/>
 	<acme:form-integer code="administrator.creditCard.form.label.month" path="month" placeholder="mm" />
 	<acme:form-integer code="administrator.creditCard.form.label.year" path="year" placeholder="yyyy" />
@@ -27,13 +27,14 @@
 	 	code="administrator.creditCard.form.button.create"
 	 	action="/administrator/credit-card/create" />
 
-	<acme:form-submit test="${command == 'update' }"
-		code="administrator.creditCard.form.button.update" 
-		action="/administrator/credit-card/update"/>
-	<acme:form-submit test="${command == 'delete' }"
-		code="administrator.creditCard.form.button.delete" 
-		action="/administrator/credit-card/delete"/>
-		
+	<jstl:if test="${command !='create' }">
+		<acme:form-submit test="${command == 'show' }"
+			code="administrator.creditCard.form.button.update" 
+			action="/administrator/credit-card/update"/>
+		<acme:form-submit test="${command == 'update' }"
+			code="administrator.creditCard.form.button.update" 
+			action="/administrator/credit-card/update"/>
+	</jstl:if>	
 	<input id="banner" name="banner" value="${banner}" type="hidden" />
     <input id="creditCard" name="creditCard" value="${creditCard}" type="hidden" />
 			

@@ -6,7 +6,6 @@
 <acme:list>
 	<acme:list-column code="administrator.banner.list.label.picture" path="picture" />
 	<acme:list-column code="administrator.banner.list.label.slogan" path="slogan" />
-	<acme:list-column code="administrator.banner.list.label.target" path="target" />
 </acme:list>
 
 

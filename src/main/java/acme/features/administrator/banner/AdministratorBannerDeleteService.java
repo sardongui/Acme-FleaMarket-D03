@@ -42,7 +42,7 @@ public class AdministratorBannerDeleteService implements AbstractDeleteService<A
 		assert model != null;
 
 		request.unbind(entity, model, "picture", "slogan", "target");
-
+		
 	}
 
 	@Override

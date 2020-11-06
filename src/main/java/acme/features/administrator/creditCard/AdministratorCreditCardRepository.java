@@ -17,4 +17,9 @@ public interface AdministratorCreditCardRepository extends AbstractRepository {
 
 	@Query("select c from CreditCard c where c.id =?1")
 	CreditCard findOneById(int id);
+	
+	@Query("select b.creditCard from Banner b where b.creditCard.id =?1")
+	CreditCard findOneByBannerId(int id);
+	
+	
 }
