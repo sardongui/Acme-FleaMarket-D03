@@ -1,0 +1,23 @@
+administrator.banner.form.label.picture = Picture
+administrator.banner.form.label.slogan = Slogan
+administrator.banner.form.label.target = URL
+
+administrator.banner.creditCard.form.legend.creditCard = Linked credit card
+administrator.banner.creditCard.form.label.holderName = Holder name
+administrator.banner.creditCard.form.label.number = Number
+administrator.banner.creditCard.form.label.brand = Brand
+administrator.banner.creditCard.form.label.month = Expiration month
+administrator.banner.creditCard.form.label.year = Expiration year
+administrator.banner.creditCard.form.label.cvv = CVV
+
+administrator.banner.form.button.addCreditCard = Add credit card
+administrator.banner.form.button.showCreditCard = Show credit card
+administrator.banner.form.button.update = Update
+administrator.banner.form.button.delete = Delete
+administrator.banner.form.button.create = Create 
+
+administrator.banner.form.button.return = Return
+
+administrator.banner.list.label.picture = Picture
+administrator.banner.list.label.slogan = Slogan
+administrator.banner.list.label.target = URL

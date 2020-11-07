@@ -9,6 +9,7 @@ authenticated.new.form.label.relatedNews = Relacionados
 
 authenticated.new.form.button.return = Volver
 
+authenticated.new.list.label.moment = Creación
 authenticated.new.list.label.category = Categoría
 authenticated.new.list.label.title = Título
 authenticated.new.list.label.body = Cuerpo

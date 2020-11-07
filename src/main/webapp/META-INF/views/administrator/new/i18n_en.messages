@@ -12,9 +12,11 @@ administrator.new.form.button.create= Create
 
 administrator.new.form.button.return = Return
 
+administrator.new.list.label.moment = Creation
 administrator.new.list.label.category = Category
 administrator.new.list.label.title = Title
 administrator.new.list.label.body = Body
 administrator.new.list.label.relatedNews = Related
 
 administrator.new.error.notConfirmed = You must confirm that you have read the warning in order to continue
+administrator.new.error.deadline = The deadline date cannot be earlier than the creation date

@@ -1,0 +1,21 @@
+
+administrator.creditCard.form.label.holderName = Nombre propietario
+administrator.creditCard.form.label.number = Número
+administrator.creditCard.form.label.brand = Marca
+administrator.creditCard.form.label.month = Mes expiración
+administrator.creditCard.form.label.year = Año expiración
+administrator.creditCard.form.label.cvv = CVV
+
+administrator.creditCard.form.button.update = Actualizar
+administrator.creditCard.form.button.create = Crear
+
+administrator.creditCard.form.button.return = Atrás
+
+administrator.creditCard.list.label.holderName = Nombre propietario
+administrator.creditCard.list.label.number = Número
+administrator.creditCard.list.label.brand = Marca
+administrator.creditCard.list.label.month = Mes expiración
+administrator.creditCard.list.label.year = Año expiración
+administrator.creditCard.list.label.cvv = CVV
+
+administrator.creditCard.error.cvv = El CVV debe tener 3 o 4 dígitos

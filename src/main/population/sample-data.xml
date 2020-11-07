@@ -112,7 +112,7 @@
 		<property name="picture" value="https://png.pngtree.com/picture-new1.jpg"/>
 		<property name="title" value="Ejemplo1"/>
 		<property name="moment" value="2020/10/25 10:21"/>
-		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="deadline" value="2021/01/15 23:00"/>
 		<property name="body" value="Esto es una novedad de ejemplo (1)"/>
 		<property name="relatedNews">
 			<list>
@@ -126,7 +126,7 @@
 		<property name="picture" value="https://png.pngtree.com/picture-new2.jpg"/>
 		<property name="title" value="Ejemplo2"/>
 		<property name="moment" value="2020/10/25 10:25"/>
-		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="deadline" value="2021/01/01 23:00"/>
 		<property name="body" value="Esto es una novedad de ejemplo (2)"/>
 		<property name="relatedNews">
 			<list>
@@ -142,7 +142,7 @@
 		<property name="picture" value="https://png.pngtree.com/picture-new3.jpg"/>
 		<property name="title" value="Ejemplo3"/>
 		<property name="moment" value="2020/10/22 12:00"/>
-		<property name="deadline" value="2020/10/23 23:00"/>
+		<property name="deadline" value="2021/01/06 23:00"/>
 		<property name="body" value="Esto es una novedad de ejemplo (3)"/>
 		<property name="relatedNews">
 			<list>
@@ -209,4 +209,30 @@
 		<property name="newsCategories" value="Breaking news,Important news,Warning,Information"/>
 		<property name="itemsCategories" value="Toilette,Kitchen,Living room,Sleeping room,Garden"/>
 	</bean>
+	
+	<!-- Credit cards -->
+	<bean id="creditCard01" class="acme.entities.creditCards.CreditCard">
+		<property name="number" value="5224746025394443" />
+		<property name="holderName" value="Holder 1" />
+		<property name="brand" value="Master-Card" />
+		<property name="month" value="08" />
+		<property name="year" value="2028" />
+		<property name="cvv" value="123" />
+	</bean>
+	
+	<!-- Banners -->
+	<bean id="banner01" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://www.imagen-banner.com"/>
+		<property name="slogan" value="Esto es un banner de ejemplo"/>
+		<property name="target" value="https://www.target1.com"/>
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+	
+	<bean id="banner02" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://www.imagen-banner2.com"/>
+		<property name="slogan" value="Esto es otro banner sin tarjeta de crédito"/>
+		<property name="target" value="https://www.target2.com"/>
+	</bean>
+	
+	
 </beans>

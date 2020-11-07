@@ -4,6 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
+	<acme:list-column code="administrator.new.list.label.moment" path="moment" />
 	<acme:list-column code="administrator.new.list.label.category" path="category" />
 	<acme:list-column code="administrator.new.list.label.title" path="title" />
 	<acme:list-column code="administrator.new.list.label.body" path="body" />

@@ -66,6 +66,8 @@ master.menu.administrator.list-material-sheet = Material sheets
 master.menu.administrator.create-material-sheet = Create material sheet
 master.menu.administrator.list-tool-sheet = Tool sheets
 master.menu.administrator.create-tool-sheet = Create tool sheet
+master.menu.administrator.list-banner = Banners
+master.menu.administrator.create-banner = Create banner
 master.menu.administrator.list-suggestion = Suggestion
 master.menu.administrator.create-suggestion = Create Suggestion
 master.menu.administrator.list-figment = Figment
@@ -142,7 +144,3 @@ master.license.text = \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
 	local storage to keep track of the document to which some buttons must return.
-	
-# master.custom-errors ##############################################################
-
-master.custom-errors.creditCard.cvv = The CVV must be 3 or 4 digits
