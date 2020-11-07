@@ -7,7 +7,6 @@ administrator.creditCard.form.label.year = Expiration year
 administrator.creditCard.form.label.cvv = CVV
 
 administrator.creditCard.form.button.update = Update
-administrator.creditCard.form.button.delete = Delete
 administrator.creditCard.form.button.create = Create 
 
 administrator.creditCard.form.button.return = Return
