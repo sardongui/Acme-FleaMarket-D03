@@ -21,25 +21,22 @@
 	<acme:form-url code="administrator.banner.form.label.target" path="target"/>
 	<br/>
 	
-	<jstl:choose> 
-		<jstl:when test="${command == 'show' and not hasCreditCard}" >
+	<jstl:if test="${command == 'show' and not hasCreditCard}" >
 			
 			 <acme:form-submit method="get"
 			code="administrator.banner.form.button.addCreditCard" 
 			action="/administrator/credit-card/create?banner=${banner}"
 			/>
 			
-		</jstl:when>
-		<jstl:otherwise>
-			<fieldset>
-			<legend><acme:message code="administrator.banner.creditCard.form.legend.creditCard"/></legend>
-			<acme:form-textbox readonly="true" code="administrator.banner.creditCard.form.label.number" path="creditCard.number" />
-			</fieldset>
-			<acme:form-submit test="${command == 'show' and hasCreditCard}" method="get" code="administrator.banner.form.button.showCreditCard" 
-			action="/administrator/credit-card/show?id=${creditCard}&banner=${banner}"/>
-		</jstl:otherwise>
-		
-	</jstl:choose>
+	</jstl:if>
+	<jstl:if test="${command == 'show' and hasCreditCard}">
+		<fieldset>
+		<legend><acme:message code="administrator.banner.creditCard.form.legend.creditCard"/></legend>
+		<acme:form-textbox readonly="true" code="administrator.banner.creditCard.form.label.number" path="creditCard.number" />
+		</fieldset>
+		<acme:form-submit method="get" code="administrator.banner.form.button.showCreditCard" 
+		action="/administrator/credit-card/show?id=${creditCard}&banner=${banner}"/>
+	</jstl:if>
 	
 	<input id="banner" name="banner" value="${banner}" type="hidden" />
 
