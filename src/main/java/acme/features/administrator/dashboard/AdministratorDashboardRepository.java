@@ -28,7 +28,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository{
 	@Query("select count(f) from Figment f")
 	Integer numberFigments();
 	
-	@Query("select count(a) from Advertisement a where CURRENT_TIMESTAMP >= a.creationMoment and CURRENT_TIMESTAMP < a.displayPeriod\"")
+	@Query("select count(a) from Advertisement a where CURRENT_TIMESTAMP >= a.creationMoment and CURRENT_TIMESTAMP < a.displayPeriod")
 	Integer numberAdvertisement();
 	
 	@Query("select min (a.item) from Advertisement a")
