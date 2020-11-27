@@ -41,8 +41,8 @@ master.menu.anonymous.list-suggestion = Lista de sugerencias
 master.menu.anonymous.list-figment = Lista de productos
 master.menu.anonymous.list-advertisement = Lista de anuncios
 master.menu.anonymous.list-new = Lista de Novedades
-master.menu.anonymous.list-material-sheet = Hojas de inventario
-master.menu.anonymous.list-tool-sheet = Hojas de herramientas
+master.menu.anonymous.list-material-sheet = Lista de Hojas de inventario
+master.menu.anonymous.list-tool-sheet = Lista de Hojas de herramientas
 
 # master.menu.authenticated ###################################################
 
@@ -51,8 +51,8 @@ master.menu.authenticated.list-suggestion = Lista de sugerencias
 master.menu.authenticated.list-figment = Lista de productos
 master.menu.authenticated.list-advertisement = Lista de anuncios
 master.menu.authenticated.list-new = Lista de novedades
-master.menu.authenticated.list-material-sheet =Hojas de inventario
-master.menu.authenticated.list-tool-sheet = Hojas de herramientas
+master.menu.authenticated.list-material-sheet =Lista de Hojas de inventario
+master.menu.authenticated.list-tool-sheet = Lista de Hojas de herramientas
 
 # master.menu.administrator ###################################################
 
@@ -61,20 +61,20 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 
-master.menu.administrator.list-new = Novedades
+master.menu.administrator.list-new = Lista de Novedades
 master.menu.administrator.create-new = Crear novedades
-master.menu.administrator.list-material-sheet = Hojas de inventario
+master.menu.administrator.list-material-sheet = Lista de Hojas de inventario
 master.menu.administrator.create-material-sheet = Crear hojas de inventario
-master.menu.administrator.list-tool-sheet = Hojas de herramientas
+master.menu.administrator.list-tool-sheet = Lista de Hojas de herramientas
 master.menu.administrator.create-tool-sheet = Crear hojas de herramientas
-master.menu.administrator.list-banner = Banners
+master.menu.administrator.list-banner = Lista de Banners
 master.menu.administrator.create-banner = Crear banner
-master.menu.administrator.list-suggestion = Sugerencias
+master.menu.administrator.list-suggestion = Lista de Sugerencias
 master.menu.administrator.create-suggestion = Crear Sugerencias
-master.menu.administrator.list-figment = Productos
+master.menu.administrator.list-figment = Lista de Productos
 master.menu.administrator.create-figment = Crear Producto
-master.menu.administrator.list-advertisement = Anuncio
-master.menu.administrator.create-advertisement = Create Anuncio
+master.menu.administrator.list-advertisement = Lista de Anuncio
+master.menu.administrator.create-advertisement = Crear Anuncio
 
 master.menu.administrator.dashboard = Panel
 master.menu.administrator.chart = Gráfico
